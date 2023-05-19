@@ -11,3 +11,6 @@ jobs:
 
       - name: Install distrobuilder
         run: sudo snap install distrobuilder --classic
+
+      - name: Build image
+        run: sudo distrobuilder build-lxd ubuntu.yaml
