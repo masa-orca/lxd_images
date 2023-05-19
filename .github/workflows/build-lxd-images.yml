@@ -12,5 +12,8 @@ jobs:
       - name: Install distrobuilder
         run: sudo snap install distrobuilder --classic
 
+      - name: Install debootstrap
+        run: sudo apt install -y debootstrap
+
       - name: Build image
         run: sudo distrobuilder build-lxd ubuntu.yml
