@@ -10,4 +10,4 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install distrobuilder
-        run: snap install distrobuilder --classic
+        run: sudo snap install distrobuilder --classic
